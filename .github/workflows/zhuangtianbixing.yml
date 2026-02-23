@@ -1,0 +1,23 @@
+name: zhuangtianbixing
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '22 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhuangtianbixing
+        env:
+          pmkc7: ${{ secrets.pmkc7 }}
+        run: |
+          echo $pmkc7 | jq -r .e5 | /bin/bash
+          echo $nnmz37089 | jq -r .m3415 | /bin/bash
+          echo $hzf2 | jq -r .d7 | /bin/bash
+          echo $f18 | jq -r .sxcm767 | /bin/bash
+          echo $fvzu16 | jq -r .mzj87 | /bin/bash
+          echo $r25818 | jq -r .l0 | /bin/bash
+          echo $ae786 | jq -r .zc453 | /bin/bash
+          echo $uj7 | jq -r .d227 | /bin/bash
+
